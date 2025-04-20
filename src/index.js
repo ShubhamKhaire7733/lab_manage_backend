@@ -1,15 +1,15 @@
-import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import express from 'express';
 import { config } from './config/config.js';
-import authRoutes from './routes/authRoutes.js';
-import teacherRoutes from './routes/teacherRoutes.js';
-import studentRoutes from './routes/studentRoutes.js';
-import adminRoutes from './routes/adminRoutes.js';
-import assessmentRoutes from './routes/assessmentRoutes.js';
-import batchRoutes from './routes/batchRoutes.js';
 import sequelize from './config/database.js';
 import setupAssociations from './models/associations.js';
+import adminRoutes from './routes/adminRoutes.js';
+import assessmentRoutes from './routes/assessmentRoutes.js';
+import authRoutes from './routes/authRoutes.js';
+import batchRoutes from './routes/batchRoutes.js';
+import studentRoutes from './routes/studentRoutes.js';
+import teacherRoutes from './routes/teacherRoutes.js';
 
 // Load environment variables
 dotenv.config();
@@ -26,6 +26,9 @@ app.use(cors({
 app.use(express.json());
 
 // Routes
+app.get('/ping', (req, res)=>{
+  res.send("Pong")
+})
 app.use('/api/auth', authRoutes);
 app.use('/api/teachers', teacherRoutes);
 app.use('/api/students', studentRoutes);
