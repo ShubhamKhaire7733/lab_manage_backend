@@ -1,0 +1,5 @@
+name,email,department,subjects,phone,password
+John Smith,john.smith@example.com,Computer Science,"['Data Structures', 'Algorithms']",1234567890,test123
+Jane Doe,jane.doe@example.com,Electronics,"['Digital Electronics', 'Microprocessors']",9876543210,test456
+Robert Wilson,robert.wilson@example.com,Information Technology,"['Web Development', 'Database Management']",5555555555,test789
+Sarah Johnson,sarah.johnson@example.com,Computer Science,"['Computer Networks', 'Operating Systems']",4444444444,testABC 

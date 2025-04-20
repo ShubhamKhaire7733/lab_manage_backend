@@ -1,0 +1,9 @@
+name,email,department,phone,subjects,password
+"John Doe","john@example.com","Computer Science","1234567890","['Mathematics', 'Physics']","teacher123"
+"Jane Smith","jane@example.com","Electronics","9876543210","['Digital Electronics', 'Microprocessors']","teacher123"
+"Bob Wilson","bob@example.com","Computer Science","5555555555","['Data Structures', 'Algorithms']","teacher123"
+"Test Teacher","test.teacher@example.com","Computer Science","9876543210","['Data Structures', 'Algorithms']","Test@123"
+"Jane Smith","jane.smith@example.com","Mathematics","9876543211","['Calculus', 'Linear Algebra']","Math@123"
+"Robert Wilson","robert.wilson@example.com","Physics","9876543212","['Mechanics', 'Thermodynamics']","Physics@123"
+"Alice Brown","alice.brown@example.com","Electronics","9876543213","['Digital Circuits', 'Microprocessors']","Electronics@123"
+"Mark Taylor","mark.taylor@example.com","Informatics","9876543214","['Operating Systems', 'Database']","Info@123" 
