@@ -1,5 +1,5 @@
 import express from 'express';
-import { saveAssessment, getStudentAssessments, getBatchAssessments } from '../controllers/assessmentController.js';
+import { getBatchAssessments, getStudentAssessments, saveAssessment } from '../controllers/assessmentController.js';
 import { verifyToken } from '../middleware/auth.js';
 
 const router = express.Router();
@@ -9,7 +9,9 @@ router.use(verifyToken);
 
 // Save or update assessment
 router.post('/', saveAssessment);
-
+router.get("/",(req,res)=>{
+    res.send("server running perfectly...")
+})
 // Get all assessments for a student
 router.get('/student/:studentRollNo', getStudentAssessments);
 
